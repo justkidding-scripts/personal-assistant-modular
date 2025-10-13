@@ -1,0 +1,15 @@
+# Personal Assistant MODULAR - Core Requirements
+fastapi>=0.111
+uvicorn>=0.29
+pydantic>=2.7
+requests>=2.32
+typer>=0.12
+discord.py>=2.3.2
+numpy>=1.24
+python-dotenv>=1.0.0
+rich>=13.0.0
+
+# Optional Advanced Dependencies (uncomment as needed)
+# chromadb>=0.4.0          # For advanced vector storage
+# sentence-transformers>=2.2.0  # For better embeddings  
+# faiss-cpu>=1.7.0         # For fast similarity search

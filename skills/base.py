@@ -1,0 +1,6 @@
+from typing import Protocol
+
+class Skill(Protocol):
+    name: str
+    def can_handle(self, text: str) -> bool: ...
+    def handle(self, text: str) -> str: ...

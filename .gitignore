@@ -1,0 +1,78 @@
+# Personal Assistant MODULAR - Git Ignore
+
+# === PYTHON ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# === VIRTUAL ENVIRONMENTS ===
+.env
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# === PERSONAL ASSISTANT SPECIFIC ===
+rag_storage/
+logs/
+*.log
+test_doc.md
+sample_knowledge.txt
+
+# === DISCORD & TOKENS ===
+.env
+*.token
+*.key
+
+# === DATABASE FILES ===
+*.db
+*.sqlite
+*.sqlite3
+
+# === TEMPORARY FILES ===
+*.tmp
+*.temp
+.cache/
+.pytest_cache/
+
+# === IDE & EDITOR FILES ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# === OS GENERATED FILES ===
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# === BACKUP FILES ===
+*.bak
+*.backup
+*.orig
