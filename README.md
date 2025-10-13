@@ -1,52 +1,52 @@
-# Personal Assistant MODULAR 🤖
+# Personal Assistant MODULAR
 
 A comprehensive, modular personal assistant with Discord integration, RAG (Retrieval-Augmented Generation) capabilities, health triage, and more.
 
-## 🚀 Features
+## Features
 
-### 🔍 **RAG System (Retrieval-Augmented Generation)**
+### **RAG System (Retrieval-Augmented Generation)**
 - Advanced document indexing and search
 - SQLite backend with Ollama/OpenAI embeddings
 - Support for .txt, .md, .json files
 - Fallback similarity search system
 - Discord file attachment indexing
 
-### 💬 **Discord Integration**
+### **Discord Integration**
 - Full Discord bot with slash commands
 - File attachment processing
 - Interactive commands with reactions
 - Both prefix (`!pa`) and slash command support
 
-### 🩺 **Health Triage**
+### **Health Triage**
 - Preliminary health assessment
 - Symptom analysis and categorization
 - Medical disclaimer compliance
 - Emergency guidance
 
-### 📋 **Todo Management**
+### **Todo Management**
 - Task tracking and organization
 - Priority management
 - Status updates
 
-### 📄 **Text Summarization**
+### **Text Summarization**
 - Document summarization
 - Content analysis
 
-### 🌐 **Web API**
+### **Web API**
 - FastAPI-based REST API
 - Interactive documentation
 - Multiple interface options
 
-### 🖥️ **CLI Interface**
+### ️ **CLI Interface**
 - Rich terminal interface
 - Interactive shell mode
 - Command completion
 
-## 📦 Installation
+## Installation
 
 ### Quick Install
 ```bash
-git clone https://github.com/nike/personal-assistant-modular.git
+git clone https/github.com/nike/personal-assistant-modular.git
 cd personal-assistant-modular
 ./install.sh
 ```
@@ -66,7 +66,7 @@ cp .env.example .env
 # Edit .env with your configurations
 ```
 
-## ⚙️ Configuration
+## ️ Configuration
 
 Create a `.env` file with your settings:
 
@@ -76,19 +76,19 @@ DISCORD_TOKEN=your_discord_bot_token_here
 DISCORD_GUILD_ID=your_server_id_optional
 
 # Ollama Configuration (Local LLM)
-OLLAMA_BASE_URL=http://localhost:11434
+OLLAMA_BASE_URL=http/localhost:11434
 OLLAMA_MODEL=llama3.2:3b
 
 # OpenAI Configuration (Optional)
 OPENAI_API_KEY=your_openai_api_key_here
-OPENAI_BASE_URL=https://api.openai.com
+OPENAI_BASE_URL=https/api.openai.com
 OPENAI_MODEL=gpt-4o-mini
 
 # RAG System
-RAG_SRC_PATH=/path/to/advanced/rag/system
+RAG_SRC_PATHpath/to/advanced/rag/system
 ```
 
-## 🏃‍♂️ Usage
+## ‍️ Usage
 
 ### Discord Bot
 ```bash
@@ -120,31 +120,31 @@ python assistant_cli.py rag ask "What did I index?"
 ```bash
 # Start FastAPI server
 python server.py
-# Visit http://localhost:8000/docs for interactive API documentation
+# Visit http/localhost:8000/docs for interactive API documentation
 ```
 
-## 🏗️ Architecture
+## ️ Architecture
 
 ```
 PERSONAL-ASSISTANT-MODULAR/
-├── 📁 skills/                   # Modular skill system
-│   ├── 🐍 base.py              # Base skill interface
-│   ├── 🔍 rag.py               # RAG implementation
-│   ├── 🩺 health_triage.py     # Health triage system
-│   ├── 📋 todos.py             # Todo management
-│   └── 📄 summarizer.py        # Text summarization
-├── 🤖 assistant.py             # Core assistant logic
-├── 💬 discord_bot.py           # Discord integration
-├── 🖥️ assistant_cli.py         # CLI interface
-├── 🌐 server.py                # FastAPI web server
-├── 📄 requirements.txt         # Python dependencies
-├── 🔧 setup.py                 # Package configuration
-├── 🚀 install.sh               # Installation script
-├── 🎯 start_bot.sh             # Bot startup script
-└── 📚 README.md                # This file
+├── skills/ # Modular skill system
+│ ├── base.py # Base skill interface
+│ ├── rag.py # RAG implementation
+│ ├── health_triage.py # Health triage system
+│ ├── todos.py # Todo management
+│ └── summarizer.py # Text summarization
+├── assistant.py # Core assistant logic
+├── discord_bot.py # Discord integration
+├── ️ assistant_cli.py # CLI interface
+├── server.py # FastAPI web server
+├── requirements.txt # Python dependencies
+├── setup.py # Package configuration
+├── install.sh # Installation script
+├── start_bot.sh # Bot startup script
+└── README.md # This file
 ```
 
-## 🔌 Skills System
+## Skills System
 
 The assistant uses a modular skill system. Each skill inherits from `BaseSkill`:
 
@@ -152,16 +152,16 @@ The assistant uses a modular skill system. Each skill inherits from `BaseSkill`:
 from skills.base import BaseSkill
 
 class CustomSkill(BaseSkill):
-    name = "custom"
-    
-    def can_handle(self, text: str) -> bool:
-        return text.startswith("custom")
-    
-    def handle(self, text: str) -> str:
-        return "Custom response"
+ name = "custom"
+
+ def can_handle(self, text: str) -> bool:
+ return text.startswith("custom")
+
+ def handle(self, text: str) -> str:
+ return "Custom response"
 ```
 
-## 🔍 RAG System Details
+## RAG System Details
 
 The RAG system supports multiple backends:
 
@@ -175,7 +175,7 @@ The RAG system supports multiple backends:
 - **Embeddings**: Character frequency analysis
 - **Search**: Basic similarity matching
 
-## 🛠️ Development
+## ️ Development
 
 ### Adding New Skills
 1. Create a new file in `skills/`
@@ -183,10 +183,10 @@ The RAG system supports multiple backends:
 3. Implement `can_handle()` and `handle()` methods
 4. Add to `assistant.py` skills list
 
-## 📄 License
+## License
 
 MIT License - see LICENSE file for details
 
 ---
 
-**Personal Assistant MODULAR** - Your comprehensive, modular AI assistant solution 🚀
+**Personal Assistant MODULAR** - Your comprehensive, modular AI assistant solution 
